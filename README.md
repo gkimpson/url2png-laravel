@@ -17,7 +17,7 @@ composer require gkimpson/url2png-laravel
 ## Usage
 
 ```php
-// this would ideally be in your .env just added this for here ease
+// this would ideally be in your .env just added this for here ease, apply for these keys from URL2PNG.com
 $url2pngConfig = [
     'apiKey' => 'P5023B6XXXXXXX',
     'secret' => 'S5F9C03XXXXXXX',
