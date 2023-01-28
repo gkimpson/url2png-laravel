@@ -1,6 +1,6 @@
 {
     "name": "gkimpson/url2png-laravel",
-    "description": "Laravel wrapper for url2png API for generating website thumbnails",
+    "description": "Laravel wrapper for url2png API for generating website thumbnails, an api key & secret key is required from https://www.url2png.com/",
     "keywords": [
         "gkimpson",
         "url2png-laravel"
@@ -34,13 +34,12 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-            "test-coverage": "vendor/bin/phpunit --coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage",
         "format": "vendor/bin/pint"
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-
             "phpstan/extension-installer": true
         }
     },
