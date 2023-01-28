@@ -40,10 +40,11 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            
+
             "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "version": "0.0.1"
 }
