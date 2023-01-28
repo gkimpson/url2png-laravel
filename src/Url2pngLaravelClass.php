@@ -13,7 +13,7 @@ class Url2pngLaravelClass
      */
     public function __construct(array $config)
     {
-        if ( ! empty($config)) {
+        if (! empty($config)) {
             foreach ($config as $key => $value) {
                 $this->{$key} = $value;
             }
@@ -50,12 +50,10 @@ class Url2pngLaravelClass
     // TODO
     public function saveImage(string $url, string $size = '1024x768', string $file = 'screengrab.jpg')
     {
-
     }
 
     // TODO
     private function logToDatabase(string $file)
     {
-
     }
 }
