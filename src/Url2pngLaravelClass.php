@@ -23,26 +23,24 @@ class Url2pngLaravelClass
     /**
      * @param string $url
      * @param array|null $args - options: 'include|fullpage|thumbnail_max_width|viewport'
-     * $options['unique']  = round(time()/60/60,0);         # Limit capture to once per hour
-     * $options['fullpage']  = 'false';                     # [true,false] Default: false
-     * $options['thumbnail_max_width'] = '500' (pixels)     # scaled image width in pixels; Default no-scaling.
-     * $options['viewport']  = '1280x1024';                 # Max 5000x5000; Default 1280x1024
-     * more info here - https://www.url2png.com/docs
-     * @return string url2png generated url with screenshot
+     * $options['unique']     = round(time()/60/60,0);      # Limit capture to once per hour
+     * $options['fullpage']  = 'false';      # [true,false] Default: false
+     * $options['thumbnail_max_width'] = 'false';      # scaled image width in pixels; Default no-scaling.
+     * $options['viewport']  = "1280x1024";  # Max 5000x5000; Default 1280x1024
+     * @return string
      */
-    public function generate(string $url, ?array $args): string
+    public function generate(string $url, ?array $args = []): string
     {
-        # urlencode request target
+        // urlencode request target
         $options['url'] = urlencode($url);
         $options += $args;
 
-        //TODO - use laravel built in feature for querystring generation
-        # create the query string based on the options
+        // TODO - use laravel built in feature for querystring generation
         foreach ($options as $key => $value) {
             $_parts[] = "$key=$value";
         }
 
-        # create a token from the ENTIRE query string
+        // create a token from the ENTIRE query string
         $query_string = implode("&", $_parts);
         $TOKEN = md5($query_string . $this->secret);
 
