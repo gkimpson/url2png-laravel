@@ -23,6 +23,8 @@ $url2pngConfig = [
     'secret' => 'S5F9C03XXXXXXX',
 ];
 $url2png = new Url2pngLaravelClass($url2pngConfig);
+
+// These options are optional - if none are set it will use the default values
 $options = array(
     'unique'    => round(time()/60/60,0);       # Limit capture to once per hour
     'viewport' 	=> '1280x1024';                 # Max 5000x5000; Default 1280x1024      
