@@ -1,8 +1,6 @@
 # Laravel wrapper for url2png API for generating website thumbnails
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gkimpson/url2png-laravel.svg?style=flat-square)](https://packagist.org/packages/gkimpson/url2png-laravel)
-[![Tests](https://img.shields.io/github/actions/workflow/status/gkimpson/url2png-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/gkimpson/url2png-laravel/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/gkimpson/url2png-laravel.svg?style=flat-square)](https://packagist.org/packages/gkimpson/url2png-laravel)
 
 Laravel package for URL2PNG.com - an API for generating website thumbnails (tested on Laravel 9.x)
 You will need to apply for an account from https://www.url2png.com and get yourself an api key & secret to generate thumbnails.
