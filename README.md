@@ -27,8 +27,9 @@ $options = array(
 echo $url2png->generate('https://www.github.com', $options);
 ```
 
+This will output a URL which will be the screenshot based on the url and parameters set (if no options set it will use default settings) 
 ```php
-https://api.url2png.com/v6/xxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxxxxxx/png/?url=https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fuk-politics-64434202
+https://api.url2png.com/v6/apikey/xxxsecretkeyxxx/png/?url=https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fuk-politics-64434202
 ```
 
 ## Testing
