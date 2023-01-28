@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Gkimpson\Url2pngLaravel\Tests;
 
 use PHPUnit\Framework\TestCase;
 

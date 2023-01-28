@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "gkimpson/url2png-laravel",
+    "description": "Laravel wrapper for url2png API for generating website thumbnails",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "gkimpson",
+        "url2png-laravel"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/gkimpson/url2png-laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Gavin Kimpson",
+            "email": "gkimpson@gmail.com",
             "role": "Developer"
         }
     ],
@@ -18,28 +18,29 @@
         "php": "^8.1"
     },
     "require-dev": {
-        :require_dev_testing,
-        :require_dev_codestyle,
+        "phpunit/phpunit": "^9.5",
+        "laravel/pint": "^1.2",
         "spatie/ray": "^1.28"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Gkimpson\\Url2pngLaravel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Gkimpson\\Url2pngLaravel\\Tests\\": "tests"
         }
     },
     "scripts": {
-        :scripts_testing,
-        :scripts_codestyle
+        "test": "vendor/bin/phpunit",
+            "test-coverage": "vendor/bin/phpunit --coverage",
+        "format": "vendor/bin/pint"
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            :plugins_testing,
+            
             "phpstan/extension-installer": true
         }
     },
